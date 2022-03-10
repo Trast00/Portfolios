@@ -1,0 +1,24 @@
+.contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .box{
+        width: 90%;
+        height: auto;
+        text-align: center;
+        box-shadow: 0 3px 6px rgb(0,0,0, 0.16);
+        margin: 16px 8px 16px 8px;
+        padding-top: 8px;
+        padding-bottom: 32px;
+
+        @media only screen and (max-width: 670px) {
+            h2{
+                font-size: 4vw;
+            }
+        }
+        
+
+    }
+}

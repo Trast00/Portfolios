@@ -1,0 +1,94 @@
+.contactItem{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    overflow: hidden;
+
+    
+    .left{
+        width: 70px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-left: 8px;
+        margin-right: 8px;
+        flex-shrink: 0;
+        
+        img{
+            width: 60px;
+            height: 60px;
+            border: none;
+            border-radius: 50%;
+            background-color: var(--tertier-color) ;
+        }
+        .isConnected{
+            width: 10px;
+            height: 10px;
+            border: 3px solid #fff;
+            border-radius: 50%;
+            background-color: var(--online-color);
+            position: absolute;
+            margin-top: 45px;
+            margin-left: 40px;
+           
+        }
+    }
+    
+    .mid{
+        width: 100%;
+        height: auto;
+        text-align: start;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 10px;
+        margin-right: 16px;
+        margin-top: 5px;
+
+        h3{
+            width: calc(90%);
+            max-height: 20px;
+            overflow: hidden;
+            white-space:nowrap;
+            text-overflow: ellipsis;
+        }
+        span{
+            width: calc(90%);
+            max-height: 20px;
+            overflow: hidden;
+            white-space:nowrap;
+            text-overflow: ellipsis;
+            margin-left: 3px;
+            margin-top: 5px;
+        }
+
+    }
+
+    .right{
+        display: flex;
+        min-width: 90px;
+        max-lines: 1;
+        margin-top: 5px;
+        margin-right: 8px;
+
+    }
+
+    @media only screen and (max-width: 1026px) {
+        .mid {
+            display: none;
+        }
+
+    }
+    @media only screen and (max-width: 1920px) {
+        .right {
+            background-color: red;
+            display: none !important;
+        }
+        
+    }
+    
+}

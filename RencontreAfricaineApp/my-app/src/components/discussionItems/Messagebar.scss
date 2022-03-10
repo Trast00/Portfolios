@@ -1,0 +1,22 @@
+.messagebar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    color: var(--secondary-color);
+
+    Input{
+        width: 100%;
+        height: 20px;
+        border: none;
+        border-radius: 30px;
+        background-color: var(--transparent-color);
+
+    }
+
+    .icons{
+        width: 30px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    
+}

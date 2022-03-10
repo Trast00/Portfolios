@@ -1,0 +1,96 @@
+.publicationItem {
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+
+
+    .box{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        box-shadow: 0 3px 6px rgb(0,0,0, 0.16);
+        text-align: center;
+        margin: 16px 8px 16px 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        position: relative;
+
+        .isConnected{
+            width: 10px;
+            height: 10px;
+            position: absolute ;
+            top: 60px;
+            left: 60px;
+            border-radius: 50%;
+            border: 3px solid white;
+            background-color: var(--online-color);
+        }
+        .top{
+            display: flex;
+            justify-content: flex-start;
+            margin: 8px 16px 8px 3px;
+
+            .profile{
+                width: 60px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                position: relative;
+                flex-shrink: 0;
+                
+                img{
+                    width: 60px;
+                    height: 60px;
+                    border: none;
+                    border-radius: 50%;
+                    background-color: var(--tertier-color) ;
+                }
+                
+            }
+            
+
+            div{
+                width: 100%;
+                text-align: start;
+                padding-left: 16px;
+            }
+            span{
+                width: 50px;
+            }
+        }
+        .mid {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            padding: 5px 8px 5px 8px;
+            img{
+                width: 100%;
+                max-width: 550px;
+                border-radius: 8px;
+            }
+            .isConnected2{
+                width: 10px;
+                height: 10px;
+                background-color: var(--online-color);
+            }
+        }
+        .bot{
+            display: flex;
+            justify-content: space-between;
+            padding: 3px 8px 3px 16px;
+
+            div{
+                display: flex;
+                align-items: center;
+
+                span{
+                    margin-left: 8px;
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+}

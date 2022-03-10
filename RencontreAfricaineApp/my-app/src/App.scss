@@ -1,0 +1,56 @@
+:root{
+    --main-color: #F82581;
+    --secondary-color: #B765CC;
+    --tertier-color: #A1C4F0;
+    --online-color: #3DB818;
+    --offline-color: #F21717;
+    --transparent-color: #707070;
+
+
+}
+html, body{
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+
+    color: #707070;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    .pageBody {
+        display: flex;
+        .left{
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+        }
+        .center{
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+        }
+
+        @media only screen and (max-width: 1026px) {
+            .right {
+                display: none;
+            }
+            .center {
+                width: 90%;
+            }
+    
+        }
+    }
+
+    @media only screen and (max-width: 700px) {
+        .pageBody{
+
+        }
+
+    }
+
+}
